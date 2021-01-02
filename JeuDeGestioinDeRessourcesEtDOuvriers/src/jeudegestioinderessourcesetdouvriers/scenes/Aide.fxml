@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="424.0" prefWidth="827.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jeudegestioinderessourcesetdouvriers.scenes.AideController">
+   <children>
+      <HBox layoutY="8.0" prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox prefHeight="374.0" prefWidth="425.0">
+               <children>
+                  <HBox prefHeight="68.0" prefWidth="293.0" style="-fx-background-color: Green; -fx-border-color: black; -fx-border-width: 3;">
+                     <children>
+                        <Canvas fx:id="dessinerIBlock" height="75.0" width="95.0" />
+                        <HBox prefHeight="75.0" prefWidth="300.0">
+                           <children>
+                              <VBox prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <Label text="I-Batiment :" textFill="WHITE" />
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="75.0" prefWidth="192.0">
+                                 <children>
+                                    <Label text="- Action : Usine" textFill="WHITE" />
+                                    <Label text="- Prix : 4 matériaux" textFill="WHITE" />
+                                    <Label lineSpacing="3.0" text="- Consomme : 1 énergie" textFill="WHITE" />
+                                    <Label text="- Produit : 2 matériaux" textFill="WHITE" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="64.0" prefWidth="280.0" style="-fx-background-color: YELLOWGREEN; -fx-border-color: black; -fx-border-width: 3;">
+                     <children>
+                        <Canvas fx:id="dessinerOBlock" height="71.0" width="93.0" />
+                        <HBox prefHeight="96.0" prefWidth="332.0">
+                           <children>
+                              <VBox prefHeight="96.0" prefWidth="113.0">
+                                 <children>
+                                    <Label text="O-Batiment :" />
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="80.0" prefWidth="240.0">
+                                 <children>
+                                    <Label text="- Action : Parc" />
+                                    <Label text="- Prix : 8 matériaux" />
+                                    <Label lineSpacing="3.0" text="- Action détaillée : " />
+                                    <Label text="  Permet de déplacer un ouvrier" />
+                                    <Label text=" dans un autre batiment vide." />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="64.0" prefWidth="273.0" style="-fx-background-color: Orange; -fx-border-color: black; -fx-border-width: 3;">
+                     <children>
+                        <Canvas fx:id="dessinerTBlock" height="77.0" width="92.0" />
+                        <HBox prefHeight="77.0" prefWidth="315.0">
+                           <children>
+                              <VBox prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <Label text="T-Batiment :" />
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="77.0" prefWidth="212.0">
+                                 <children>
+                                    <Label text="- Action : Panneau Solaire" />
+                                    <Label text="- Prix : 2 matériaux" />
+                                    <Label text="- Produit : 2 énergies (dans  les" />
+                                    <Label text="                tours pairs)" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="199.0" prefWidth="423.0" style="-fx-background-color: #9d2626; -fx-border-color: black; -fx-border-width: 3;">
+                     <children>
+                        <Canvas fx:id="dessinerLBlock" height="98.0" width="91.0" />
+                        <HBox prefHeight="112.0" prefWidth="317.0">
+                           <children>
+                              <VBox prefHeight="144.0" prefWidth="112.0">
+                                 <children>
+                                    <Label text="L-Batiment :" textFill="WHITE" />
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="112.0" prefWidth="232.0">
+                                 <children>
+                                    <Label text="- Action : Appartement" textFill="WHITE" />
+                                    <Label text="- Prix : 8 matériaux" textFill="WHITE" />
+                                    <Label lineSpacing="3.0" text="- Consomme : 1 énergie" textFill="WHITE" />
+                                    <Label lineSpacing="3.0" text="- Action détaillée : " textFill="WHITE" />
+                                    <Label text="  Si 2 ouvriers sont placés" textFill="WHITE" />
+                                    <Label text="  sur ce batiment, ils " textFill="WHITE" />
+                                    <Label text="  retourneront automatiquement" textFill="WHITE" />
+                                    <Label text="  hors du plateau, et un ouvrier" textFill="WHITE" />
+                                    <Label text="  s'ajoutera au total des ouvriers." textFill="WHITE" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox prefHeight="426.0" prefWidth="406.0">
+               <children>
+                  <HBox prefHeight="64.0" prefWidth="300.0" style="-fx-background-color: PURPLE; -fx-border-width: 3; -fx-border-color: black;">
+                     <children>
+                        <Canvas fx:id="dessinerJBLock" height="81.0" width="92.0" />
+                        <HBox prefHeight="75.0" prefWidth="300.0">
+                           <children>
+                              <VBox prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <Label text="J-Batiment :" textFill="WHITE" />
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="112.0" prefWidth="200.0">
+                                 <children>
+                                    <Label text="- Action : Laboratoire" textFill="WHITE" />
+                                    <Label text="- Prix : 8 matériaux" textFill="WHITE" />
+                                    <Label lineSpacing="3.0" text="- Consomme : 4 énergies" textFill="WHITE" />
+                                    <Label text="- Produit : 2 matériaux" textFill="WHITE" />
+                                    <Label text="- Action détaillée :" textFill="WHITE" />
+                                    <Label text="  Pioche un batiment de la" textFill="WHITE" />
+                                    <Label text="  pile." textFill="WHITE" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="43.0" prefWidth="300.0" style="-fx-background-color: CYAN; -fx-border-color: black; -fx-border-width: 3;">
+                     <children>
+                        <Canvas fx:id="dessinerSBlock" height="64.0" width="90.0" />
+                        <HBox prefHeight="75.0" prefWidth="300.0">
+                           <children>
+                              <VBox prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <Label text="S-Batiment :" />
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="54.0" prefWidth="171.0">
+                                 <children>
+                                    <Label text="- Action : Mine" />
+                                    <Label text="- Prix : 2 matériaux" />
+                                    <Label text="- Produit : 1 matériel" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="77.0" prefWidth="300.0" style="-fx-background-color: turquoise; -fx-border-color: black; -fx-border-width: 3;">
+                     <children>
+                        <Canvas fx:id="dessinerZBlock" height="64.0" width="91.0" />
+                        <HBox prefHeight="75.0" prefWidth="300.0">
+                           <children>
+                              <VBox prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <Label text="Z-Batiment :" />
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="80.0" prefWidth="203.0">
+                                 <children>
+                                    <Label text="- Action : Décharge" />
+                                    <Label text="- Prix : 2 matériaux" />
+                                    <Label text="- Consomme : 1 énergie" />
+                                    <Label text="- Action détaillée :" />
+                                    <Label text="  Enlève un batiment non " />
+                                    <Label text="  souhaité de la main." />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #52bf7d; -fx-border-color: black; -fx-border-width: 3;">
+                     <children>
+                        <Label style="-fx-background-color: #123c0e; -fx-border-color: #7fe474;" text=" Comment jouer ? " textFill="#7fe474" />
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <VBox prefHeight="88.0" prefWidth="451.0">
+                                 <children>
+                                    <Label text="-Pour placer un batiment ou un ouvrier appuyez sur les" />
+                                    <Label text=" boutons." />
+                                    <Label text="-Déplacements effectué avec les flèches directionnelle" />
+                                    <Label text="-Pivots des batiment réalisable avec la touche T" />
+                                    <Label prefHeight="16.0" prefWidth="394.0" text="-Validation des ouvriers et batiments avec la touche ENTER." />
+                                    <Label text="-Supprimer un batiment ou déplacer un ouvrier  avec les" />
+                                    <Label text=" boutons &quot;Choisir ouvrier&quot; et &quot;Supprimer&quot;." />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
